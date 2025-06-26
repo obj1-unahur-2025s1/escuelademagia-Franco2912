@@ -1,9 +1,15 @@
-import example.pepita
+import hogwart.*
 
-describe "group of tests for pepita" {
+describe "Pruebas de hechizos y materias" {
+  
+  const defensaContraLasArtesOscuras = new Materia(hechizo=inmobilus)
+  const harry = new Estudiante(salud=100, casa=gryffindor, habilidad=5, sangrePura=true)
+  const draco = new Estudiante(salud=100, casa=slytherin, habilidad=2, sangrePura=true)
+  const hermione = new Estudiante(salud=100, casa=ravenclaw , habilidad=8, sangrePura=true)
+  const ron =  new Estudiante(salud=100, casa=hufflepuff , habilidad=4, sangrePura=false)
+  const lechuza = new CriaturaPractica(salud=100)
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+  test "description" {
+    
   }
-
 }
